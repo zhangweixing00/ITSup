@@ -1,0 +1,134 @@
+﻿.List
+{
+    width: 100%;
+}
+
+.List th, .List td
+{
+    border: 1px solid #eaeaea;
+    padding-top: 3px;
+    padding-left: 3px;
+    height: 25px;
+    line-height: 25px;
+}
+.List th
+{
+    /*   background-color: #DEEDF9;*/
+    font-weight: bold;
+    text-align: left;
+    background: #eaeaea;
+}
+
+.List .Alternating td
+{
+    background-color: #F7FBFF;
+}
+
+.List A:link
+{
+    height: 19px;
+    text-decoration: none;
+}
+.List A:visited
+{
+    height: 19px;
+    text-decoration: none;
+}
+.List A:hover
+{
+    height: 19px;
+    text-decoration: underline;
+}
+.List A:active
+{
+    height: 19px;
+    text-decoration: none;
+    color: #4B4B4B;
+}
+.anpager
+{
+    margin: 8px;
+    text-align: center;
+}
+.anpager .cpb
+{
+    background: #1F3A87 none repeat scroll 0 0;
+    border: 1px solid #CCCCCC;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 5px 4px 0 0;
+    padding: 4px 5px 0;
+}
+.anpager a
+{
+    background: #FFFFFF none repeat scroll 0 0;
+    border: 1px solid #CCCCCC;
+    color: #1F3A87;
+    margin: 5px 4px 0 0;
+    padding: 4px 5px 0;
+    text-decoration: none;
+}
+.anpager a:hover
+{
+    background: #1F3A87 none repeat scroll 0 0;
+    border: 1px solid #1F3A87;
+    color: #FFFFFF;
+}
+.anpager span
+{
+    background: #1F3A87 none repeat scroll 0 0;
+    border: 1px solid #CCCCCC;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 5px 4px 0 0;
+    padding: 4px 5px 0;
+}
+.anpager td
+{
+    text-align: center;
+}
+.anpager table td
+{
+    border: 0px;
+}
+.link
+{
+     margin-left:10px;
+     margin-bottom:10px;
+}
+.realChartDiv
+{
+    margin-top: 30px;
+    width: 600px;
+    position: absolute;
+}
+.detialChartDiv
+{
+    margin-top: 30px;
+    width: 800px;
+    position: absolute;
+        float: left;
+    left: 600px;
+}
+.avgChartDiv
+{
+    margin-top: 30px;
+    width: 600px;
+    position: absolute;
+    float: left;
+    left: 600px;
+}
+.tabletitle
+{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom:10px;
+}
+.tableSubtitle
+{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom:10px;
+}
