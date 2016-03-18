@@ -31,5 +31,12 @@ namespace ITSupportPlatform.Services
         {
             return new ITSupportHelper().GetDetailStatsisInfos(sT, eT, user);
         }
+
+        [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        [OperationContract]
+        public void Export(string sT, string eT, string user)
+        {
+            string[] cc = { "1", "2", "3" };
+        }
     }
 }

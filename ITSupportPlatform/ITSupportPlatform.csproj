@@ -16,8 +16,8 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
+    <IISExpressAnonymousAuthentication>disabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
@@ -91,6 +91,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\common.css" />
+    <Content Include="Controls\Menu.ascx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -105,6 +106,7 @@
     <None Include="Properties\PublishProfiles\pb.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Pages\FourDX.aspx" />
+    <Content Include="Pages\ITQuery.aspx" />
     <Content Include="Pages\Statsis.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -131,8 +133,16 @@
     <Content Include="Scripts\statsis.js" />
     <Content Include="Services\AjaxService.svc" />
     <Content Include="Web.config" />
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Master\Index.Master.cs">
       <DependentUpon>Index.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -146,6 +156,13 @@
     </Compile>
     <Compile Include="Pages\FourDX.aspx.designer.cs">
       <DependentUpon>FourDX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ITQuery.aspx.cs">
+      <DependentUpon>ITQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ITQuery.aspx.designer.cs">
+      <DependentUpon>ITQuery.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Statsis.aspx.cs">
       <DependentUpon>Statsis.aspx</DependentUpon>
@@ -163,6 +180,7 @@
     <Compile Include="Services\Infos\FourDXItem.cs" />
     <Compile Include="Services\Infos\StatsicItem.cs" />
     <Compile Include="Services\ITSupportHelper.cs" />
+    <Compile Include="Services\Permission.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.9.1.min.map" />

@@ -1,5 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Index.master.cs" Inherits="ITSupportPlatform.Master.Index" %>
 
+<%@ Register Src="../Controls/Menu.ascx" TagName="Menu" TagPrefix="uc1" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -17,17 +19,20 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <div class="container" style="width: 1200px">
+    <div class="container" style="width: 1300px">
         <div class="page-header">
             <h1>IT支持平台 <small>数据统计</small></h1>
         </div>
         <form id="form1" runat="server" class="form-horizontal">
+           
             <div>
-                <ul class="nav nav-pills">
+ <uc1:Menu ID="Menu1" runat="server" />
+<%--                                <ul class="nav nav-pills">
                     <li role="presentation"><a href="#">支持单查询</a></li>
+                    <li role="presentation" class="divider"></li>  
                     <li role="presentation" class="active"><a href="#">完成率统计</a></li>
                     <li role="presentation"><a href="#">其他</a></li>
-                </ul>
+                </ul>--%>
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

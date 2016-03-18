@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootStrap.Net", "BootStrap.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStudy", "ExpressStudy\ExpressStudy.csproj", "{E2366E0E-8646-4555-9E37-249650EBCBE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoStart", "MongoStart\MongoStart.csproj", "{DB73D420-12FB-4EC3-99A4-F6F2DBB34B08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E2366E0E-8646-4555-9E37-249650EBCBE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2366E0E-8646-4555-9E37-249650EBCBE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2366E0E-8646-4555-9E37-249650EBCBE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB73D420-12FB-4EC3-99A4-F6F2DBB34B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB73D420-12FB-4EC3-99A4-F6F2DBB34B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB73D420-12FB-4EC3-99A4-F6F2DBB34B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB73D420-12FB-4EC3-99A4-F6F2DBB34B08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

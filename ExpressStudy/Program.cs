@@ -30,6 +30,10 @@ namespace ExpressStudy
 
         static void Main(string[] args)
         {
+            //var cc= "1,2,3".Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries).
+            Array.ConvertAll<string,int>("1,2,3".Split(','), x => int.Parse(x));
+            return;
+
             Target = new Foobar();
 
             Method = typeof(Foobar).GetMethod("Run");
