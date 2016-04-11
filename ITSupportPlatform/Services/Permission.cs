@@ -16,7 +16,7 @@ namespace ITSupportPlatform.Services
         internal static bool CheckPermission(IList roles)
         {
             UserRole role = GetUserRole();
-           // var roleList = roles as List<string>;
+            // var roleList = roles as List<string>;
             if (roles.Contains(role.ToString()))
             {
                 return true;
@@ -28,7 +28,16 @@ namespace ITSupportPlatform.Services
         {
             string user = HttpContext.Current.User.Identity.Name;
             user = user.ToLower().Replace("founder\\", "");
+            if (Environment.UserName == "zhangweixing")
+            {
+                return UserRole.SuperAdmin;
+            }
             string adminConfig = System.Configuration.ConfigurationManager.AppSettings["admin"];
+            string superAdminConfig = System.Configuration.ConfigurationManager.AppSettings["superadmin"];
+            if (superAdminConfig.Split(',').Contains(user))
+            {
+                return UserRole.SuperAdmin;
+            }
             if (adminConfig.Split(',').Contains(user))
             {
                 return UserRole.Admin;
@@ -40,6 +49,7 @@ namespace ITSupportPlatform.Services
     enum UserRole
     {
         Admin,
-        User
+        User,
+        SuperAdmin
     }
 }

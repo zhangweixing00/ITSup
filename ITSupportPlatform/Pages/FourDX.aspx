@@ -13,11 +13,11 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-5">
+        <div class="col-lg-5" style="margin-left:10px;">
 
             <div id="chartContainer_EveryWeek"></div>
         </div>
-        <div class="col-lg-2"></div>
+        <div class="col-lg-1"></div>
         <div class="col-lg-5">
             <div id="chartContainer_real">
                 请稍后.....

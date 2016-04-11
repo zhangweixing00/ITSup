@@ -27,9 +27,9 @@ namespace ITSupportPlatform.Services
 
         [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         [OperationContract]
-        public List<Infos.FourDXDetailItem> FourDxDetail(string sT, string eT, string user)
+        public List<Infos.TimeRateInfo> TimeRate(string sT, string eT)
         {
-            return new ITSupportHelper().GetDetailStatsisInfos(sT, eT, user);
+            return new ITSupportHelper().GetTimeRateInfos(sT, eT);
         }
 
         [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using ITSupportPlatform.Services.Infos;
 
 namespace ITSupportPlatform.Services
 {
@@ -45,6 +46,12 @@ namespace ITSupportPlatform.Services
                 filterInfos = filterInfos.Where(x => DateTime.Parse(x.SumitTime)<= dt2);
             }
             return filterInfos.ToList();
+        }
+
+        internal List<TimeRateInfo> GetTimeRateInfos(string startTime, string endTime)
+        {
+            var infos = ZLX.Framework.ToolKit.DP_Static.CustomProcess.GetListByProc<Infos.TimeRateInfo>("Biz.OA_ITSupport_Manage_TimeRate", new object[] { startTime, endTime });
+            return infos;
         }
     }
 }

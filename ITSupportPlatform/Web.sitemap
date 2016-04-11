@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
     <siteMapNode url="~/deafult.aspx" title="Index"  description="">
-        <siteMapNode url="~/pages/ITQuery.aspx" title="支持单查询"  description=""  roles="Admin,User" />
-        <siteMapNode url="~/pages/FourDX.aspx" title="完成率统计"  description="" roles="Admin"/>
-        <siteMapNode url="~/pages/FourDX1.aspx" title="时效查询"  description="" roles="Admin"/>      
+        <siteMapNode url="~/pages/ITQuery.aspx" title="支持单查询"  description=""  roles="Admin,User,SuperAdmin" />
+        <siteMapNode url="~/pages/FourDX.aspx" title="完成率统计"  description="" roles="Admin,SuperAdmin"/>
+        <siteMapNode url="~/pages/TimeRate.aspx" title="时效查询"  description="" roles="SuperAdmin"/>      
     </siteMapNode>
 </siteMap>
